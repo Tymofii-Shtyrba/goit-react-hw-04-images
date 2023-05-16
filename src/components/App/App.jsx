@@ -27,7 +27,7 @@ export const App = () => {
 
   useEffect(() => {
     if (query === '') return;
-    request();
+    request(); // eslint-disable-next-line
   }, [query, page]);
 
   const onSearch = e => {
