@@ -16,7 +16,7 @@ export default function Modal({ largeImageRef, onClose }) {
     window.addEventListener('keydown', handleKeyDown);
     return function () {
       window.removeEventListener('keydown', handleKeyDown);
-    };
+    }; // eslint-disable-next-line
   }, []);
 
   const handleBackdropClicl = e => {
